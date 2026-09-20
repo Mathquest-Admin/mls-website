@@ -1,1 +1,96 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Math Logic Systems helps identify what learners know, where difficulty begins, and what learning experience may help next.">
+  <title>Math Logic Systems</title>
+  <style>
+    :root{--navy:#0b2242;--blue:#173b68;--gold:#d4a017;--cream:#f7f4ec;--white:#fff;--text:#263445;--muted:#5b6775}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--text);line-height:1.6}
+    .wrap{width:min(1100px,calc(100% - 36px));margin:auto}
+    header{background:var(--navy);color:var(--white)}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .logo{display:grid;place-items:center;width:52px;height:52px;border:2px solid var(--gold);border-radius:12px;color:var(--gold);font-size:20px}
+    .brand small{display:block;color:#cbd6e5;font-weight:400}
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:42px;align-items:center;padding:76px 0 88px}
+    .eyebrow{color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:13px}
+    h1{font-size:clamp(42px,6vw,68px);line-height:1.05;margin:12px 0 18px}
+    .hero p{max-width:680px;color:#dbe4ef;font-size:19px}
+    .button{display:inline-block;margin-top:18px;padding:14px 24px;border-radius:9px;background:var(--gold);color:var(--navy);font-weight:700;text-decoration:none}
+    .hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:26px;border-radius:18px}
+    .hero-card h2{color:var(--gold);margin-top:0}
+    main section{padding:68px 0}
+    .section-title{text-align:center;max-width:760px;margin:0 auto 34px}
+    .section-title h2{color:var(--navy);font-size:36px;margin:5px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:var(--white);padding:28px;border-radius:16px;box-shadow:0 8px 30px rgba(11,34,66,.08);border-top:4px solid var(--gold)}
+    .card h3{color:var(--navy);margin-top:0}
+    .family{background:var(--white)}
+    .family-layout{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+    .checklist{list-style:none;padding:0}
+    .checklist li{margin:12px 0;padding:12px 14px;background:var(--cream);border-radius:9px}
+    .checklist li:before{content:"✓";color:var(--gold);font-weight:700;margin-right:10px}
+    .contact{text-align:center;background:var(--navy);color:var(--white);border-radius:20px;padding:44px}
+    .contact h2{font-size:34px;margin:0 0 10px}
+    .contact a{color:var(--gold)}
+    footer{text-align:center;padding:30px;color:var(--muted)}
+    @media(max-width:760px){.hero,.family-layout,.grid{grid-template-columns:1fr}.hero{padding:48px 0}.hero-card{display:none}nav{align-items:flex-start}.brand small{display:none}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand"><div class="logo">MLS</div><div>Math Logic Systems<small>Evidence-Driven Mathematics</small></div></div>
+    </nav>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Child First • Evidence Driven</div>
+        <h1>Understanding how people learn mathematics.</h1>
+        <p>Math Logic Systems helps identify what learners know, where difficulty begins, and what learning experience may help next.</p>
+        <a class="button" href="#contact">Learn About the MLS Pilot</a>
+      </div>
+      <div class="hero-card">
+        <h2>Our Approach</h2>
+        <p>Review current work.</p><p>Identify demonstrated skills and possible gaps.</p><p>Determine the next focused learning step.</p>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section>
+    <div class="wrap">
+      <div class="section-title"><div class="eyebrow">Why MLS Exists</div><h2>Looking beyond right and wrong answers</h2><p>MLS seeks to understand what the learner knows, what strategy was used, where difficulty begins, and what support may help next.</p></div>
+      <div class="grid">
+        <div class="card"><h3>Review</h3><p>Examine worksheets, tests, quizzes, assignments, and workbook pages.</p></div>
+        <div class="card"><h3>Understand</h3><p>Identify demonstrated skills, strategies, recurring errors, and possible learning gaps.</p></div>
+        <div class="card"><h3>Respond</h3><p>Select a focused next learning activity based on available evidence.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="family">
+    <div class="wrap family-layout">
+      <div><div class="eyebrow">For Families</div><h2>Keep your current curriculum.</h2><p>MLS can begin by reviewing mathematics work your learner is already completing. No curriculum replacement is required.</p></div>
+      <ul class="checklist"><li>Worksheets and workbook pages</li><li>Tests and quizzes</li><li>Assignments and projects</li><li>Parent observations</li></ul>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="section-title"><div class="eyebrow">Current Focus Areas</div><h2>Foundational mathematics</h2></div>
+      <div class="grid">
+        <div class="card"><h3>Number Sense</h3><p>Quantities, counting, place value, and number relationships.</p></div>
+        <div class="card"><h3>Operations</h3><p>Addition, subtraction, multiplication, and division.</p></div>
+        <div class="card"><h3>Fractions</h3><p>Models, comparisons, equivalence, and operations.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap contact"><h2>Contact Math Logic Systems</h2><p>Jefferson Davis, Founder</p><p>Chattanooga, Tennessee</p><p><a href="mailto:pilot@mathlogicsystems.com">pilot@mathlogicsystems.com</a></p></div>
+  </section>
+</main>
+<footer>© 2026 Math Logic Systems. All rights reserved.</footer>
+</body>
+</html>
